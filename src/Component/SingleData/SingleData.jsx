@@ -1,7 +1,7 @@
 import React from 'react';
 
 const SingleData = ({data}) => {
-    console.log(data);
+    // console.log(data);
     const {title , img , jobsAvailable} = data;
     return (
         <div className='my-12'>

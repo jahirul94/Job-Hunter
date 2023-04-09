@@ -13,7 +13,7 @@ const CatagoryList = () => {
     <div>
          <div className="text-center my-12">
               <h1 className="text-4xl font-bold mb-4">Job Category List</h1>
-              <p className="font-semibold">Explore thousands of job opportunities with all the information you need. Its your future</p>
+              <p className="text-slate-600">Explore thousands of job opportunities with all the information you need. Its your future</p>
          </div>
 
       <div className="flex justify-around">
