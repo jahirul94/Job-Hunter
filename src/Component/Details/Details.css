@@ -1,3 +1,21 @@
 .details{
-    
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.contact-info{
+    background-color:rgba(204, 115, 255, 0.171);
+    padding: 30px 0px 30px 30px;
+    margin-right: 100px;
+    border-radius: 10px;
+}
+.apply-btn{
+    background-color: #9873FF;
+    font-size: 20px;
+    color: white;
+    padding: 10px 100px;
+    border-radius: 8px;
+    margin-top: 20px;
 }

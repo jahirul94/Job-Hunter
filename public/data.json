@@ -8,12 +8,14 @@
     "jobPost": "Senior Software Engineer",
     "email": "jobs@apple.com",
     "address": "motijil , Dhaka , Bangladesh",
-    "number": "555-1234",
+    "number": "+88017000-00000",
     "location": "Cupertino, CA",
     "salary": "$150,00",
     "jobDescription": "We are seeking a highly motivated software engineer to join our team.",
     "jobResponsibility": "Develop and maintain software applications for iOS and MacOS platforms.",
-    "educationalRequirements": "Bachelor's or Master's degree in Computer Science or related field."
+    "education": "Bachelor's or Master's degree in Computer Science or related field",
+    "experience": "2 Years in this field"
+  
   },
   {
     "companyName": "Microsoft",
@@ -29,7 +31,9 @@
     "salary": "$170,00",
     "jobDescription": "We are looking for a skilled Cloud Architect to help us design and implement our cloud infrastructure.",
     "jobResponsibility": "Design and implement scalable, secure, and reliable cloud infrastructure using Azure.",
-    "educationalRequirements": "Bachelor's or Master's degree in Computer Science, Information Technology, or related field."
+    "education": "Bachelor's or Master's degree in Computer Science or related field",
+    "experience": "Experience with software development, ideally in the areas of cloud computing, artificial intelligence, or gaming"
+  
   },
   {
     "companyName": "Intel",
@@ -45,7 +49,9 @@
     "salary": "$160,00",
     "jobDescription": "We are seeking a Hardware Engineer to join our team and help design and develop cutting-edge hardware solutions.",
     "jobResponsibility": "Design and develop innovative hardware solutions for the latest technology products.",
-    "educationalRequirements": "Bachelor's or Master's degree in Electrical Engineering, Computer Engineering, or related field."
+    "education": "Bachelor's or Master's degree in Computer Science, Electrical Engineering, or related field",
+    "experience": "3 Years in this field."
+ 
   },
   {
     "companyName": "ChatGPT",
@@ -61,6 +67,8 @@
     "salary": "$180,00",
     "jobDescription": "We are seeking a talented AI Engineer to help us develop and improve our conversational AI platform.",
     "jobResponsibility": "Design and implement new AI models and algorithms for our conversational AI platform.",
-    "educationalRequirements": "Bachelor's or Master's degree in Computer Science, Artificial Intelligence, or related field."
+    "education": "Bachelor's or Master's degree in Computer Science, Linguistics, or related field",
+    "experience": "Experience with natural language processing, machine learning, or software development"
+ 
   }
 ]
