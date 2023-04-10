@@ -1,11 +1,10 @@
 import React from 'react';
 import CatagoryList from '../CatagoryList/CatagoryList';
 import Featured from '../Featured/Featured';
-import { useLoaderData } from 'react-router-dom';
+import { useLoaderData} from 'react-router-dom';
 
 const Home = () => {
  const data = useLoaderData();
- 
     return (
         <div className='mx-12'>
               <div className='flex justify-between items-center py-12'>
@@ -26,7 +25,7 @@ const Home = () => {
                     </section>
                     <div className='features'>
                             {
-                            data.map((features) => (<Featured key={features.id} features ={features} ></Featured>))
+                            data.map((features) => (<Featured key={features.id} features ={features}></Featured>))
                             }
                     </div>
                       <div className='text-center mb-12'>
