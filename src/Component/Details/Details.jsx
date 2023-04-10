@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 import './Details.css';
 import {PhoneArrowDownLeftIcon , CurrencyDollarIcon , BriefcaseIcon , EnvelopeIcon , MapPinIcon} from '@heroicons/react/24/solid'
+import { getShoppingCart } from '../../utilities/fakedb';
 
 const Details = () => {
  const [details , setDetails] = useState({}) 
@@ -15,9 +16,44 @@ const Details = () => {
         setDetails(detailsData)     
      }
  },[])
+
+
+//  local storage ******
+
+const addToDb = data => {
+ const previousData = JSON.parse(localStorage.getItem('apply-data'))
+  let allData = [];
+
+  if(previousData){
+    const isAvailabe = previousData.find(pd => pd.id == data.id) 
+        if(isAvailabe){
+          alert('items added')
+        }
+        else{
+           allData.push(...previousData , data )  ;
+           localStorage.setItem('apply-data', JSON.stringify(allData))
+        }
+  }
+else{
+    allData.push(data)
+    localStorage.setItem('apply-data', JSON.stringify(allData))
+
+}
+
+
+
+
+}
+// end *******  
+
+
+
+
+
+
  const {jobDescription , jobResponsibility , salary , jobPost , email , address , number , education , experience } = details ;
 
- console.log(details);
+//  console.log(details);
  return (
         <div className='mb-12'>
              <div className='text-3xl font-bold text-center pt-8 mt-12 mb-24'>
@@ -66,7 +102,7 @@ const Details = () => {
                                    <p className='text-slate-500'><span  className='text-lg font-bold text-black'>Address : </span>{address}</p>
                                </div>
                             <div className='mx-auto'>
-                                 <button className='apply-btn'>Apply Now</button>
+                                 <button onClick={ ()=> addToDb(details)} className='apply-btn'>Apply Now</button>
                             </div>
                         </div>
                    </div>
