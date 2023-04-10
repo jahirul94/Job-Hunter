@@ -4,8 +4,8 @@ import './Header.css'
 
 const Header = () => {
     return (
-         <div>
-           <nav className='flex justify-between my-8 mx-10'> 
+         <div className='bg-slate-200 px-2 py-2'>
+           <nav className='flex justify-between my-4 mx-10'> 
               <h2 className='text-3xl font-bold'>Job Hunter</h2>
                <div className='nav-links'>
                     {/* <Link to ='/'>Home</Link> */}
