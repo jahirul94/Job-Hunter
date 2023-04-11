@@ -1,11 +1,13 @@
 import React from 'react';
 import './Features.css'
 import { CurrencyDollarIcon, MapPinIcon } from '@heroicons/react/24/solid'
-import { Link, useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Featured = ({features}) => {
+    
     const {id, companyName , imgUrl , jobPost , salary , location , jobType , jobType1 } = features ;
-    // console.log(features)
+   
+
     return (
            <div className='m-8 p-8 mx-auto border'>
               <div>

@@ -1,0 +1,10 @@
+@media only screen and (max-width: 600px) {
+       .responsive{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+       }
+       .responsive-margin {
+         margin-bottom: 30px;
+       }
+  }

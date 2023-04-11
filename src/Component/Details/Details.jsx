@@ -27,7 +27,7 @@ const addToDb = data => {
   if(previousData){
     const isAvailabe = previousData.find(pd => pd.id == data.id) 
         if(isAvailabe){
-          alert('items added')
+         
         }
         else{
            allData.push(...previousData , data )  ;

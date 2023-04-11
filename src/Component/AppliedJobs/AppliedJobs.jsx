@@ -4,17 +4,19 @@ import './AppliedJobs.css'
 import ShowAppliedData from '../ShowAppliedData/ShowAppliedData';
 
 const AppliedJobs = () => {
-    const localData1 = getShoppingCart();
-    
+    const localData1 = getShoppingCart(); 
 
     return (
-        <div>
+        <div className='mb-60'>
              <div className='text-center mb-40 mt-8'>
                   <h2 className='text-3xl font-bold'>Applied Jobs</h2>
                </div>
                 <div>
+                    <div className='text-end me-72 mb-8'>
+                        <button>hi</button>
+                    </div>
                     {
-                    localData1.map( ld => <ShowAppliedData key={ld.id} localData = {ld}></ShowAppliedData>)
+                       localData1.map( ld => <ShowAppliedData key={ld.id} localData = {ld}></ShowAppliedData>)
                     }
                 </div>
         </div>

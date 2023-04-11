@@ -16,7 +16,7 @@ const CatagoryList = () => {
               <p className="text-slate-600">Explore thousands of job opportunities with all the information you need. Its your future</p>
          </div>
 
-      <div className="flex justify-around">
+      <div className="flex justify-around responsive">
         {data.map((singleData) => (
           <SingleData
             key={singleData.jobsAvailable}
