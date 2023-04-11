@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const ShowAppliedData = ({localData}) => {
 
     const {imgUrl , companyName , jobPost , jobType , jobType1 , location , salary , id } = localData;
-
+    
     return (
         <div>
              <div className='flex justify-between mx-44 px-10 mb-8'>

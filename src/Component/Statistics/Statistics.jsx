@@ -14,7 +14,7 @@ import {
 const Statistics = () => {
     const assignmentData = useLoaderData();
     return (
-        <div className='mt-20'>
+        <div className='mt-20 ms-48 mb-40'>
              <ComposedChart
               width={900}
               height={400}
