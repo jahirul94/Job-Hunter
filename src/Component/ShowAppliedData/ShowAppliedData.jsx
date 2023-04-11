@@ -1,9 +1,10 @@
 import React from 'react';
 import { CurrencyDollarIcon , MapPinIcon} from '@heroicons/react/24/solid'
+import { Link } from 'react-router-dom';
 
 const ShowAppliedData = ({localData}) => {
 
-    const {imgUrl , companyName , jobPost , jobType , jobType1 , location , salary , } = localData;
+    const {imgUrl , companyName , jobPost , jobType , jobType1 , location , salary , id } = localData;
 
     return (
         <div>
@@ -31,7 +32,7 @@ const ShowAppliedData = ({localData}) => {
                    </div>
    
                     <div className='flex items-center me-8'>
-                         <button className='btn-details'>View Details</button>
+                        <Link to={`/details/${id}`}><button className='btn-details'>View Details</button></Link>
                     </div>
               </div>
         </div>
