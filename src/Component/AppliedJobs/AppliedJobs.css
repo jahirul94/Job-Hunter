@@ -6,3 +6,25 @@
     border-radius: 8px;
     font-size: 20px;
 }
+
+
+.dropBtn {
+    background-color: #04AA6D;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+  }
+
+.dropdown:hover .dropdown-content {display: block}
+
+.dropdown:hover .dropBtn {background-color: #3e8e41;}
+  

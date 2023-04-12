@@ -28,8 +28,12 @@ const getShoppingCart = () => {
     const storedCart = localStorage.getItem('apply-data');
     if (storedCart) {
         shoppingCart = JSON.parse(storedCart);
+        return shoppingCart;
     }
-    return shoppingCart;
+    else{
+        shoppingCart = [];
+        return shoppingCart
+    }
 }
 
 const deleteShoppingCart = () => {

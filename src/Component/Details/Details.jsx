@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 import './Details.css';
 import {PhoneArrowDownLeftIcon , CurrencyDollarIcon , BriefcaseIcon , EnvelopeIcon , MapPinIcon} from '@heroicons/react/24/solid'
-import { getShoppingCart } from '../../utilities/fakedb';
+
 
 const Details = () => {
  const [details , setDetails] = useState({}) 
