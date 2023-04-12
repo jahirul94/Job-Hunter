@@ -38,7 +38,7 @@ const Home = () => {
                               data.map((features) => (<Featured key={features.id} features ={features}></Featured>))
                             }
                     </div>
-                      <div className='text-center mb-12'>
+                      <div className={data.length == 4 ? 'text-center mb-12' : "hidden"}>
                           <button onClick={handleAllData} className='bg-sky-400 px-8 py-2 rounded text-white'>See All Jobs</button>
                       </div>
                 </div>
